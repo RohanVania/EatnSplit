@@ -4,19 +4,20 @@ import FormAddFriend from './FormAddFriend'
 import Button from './Button'
 
 
-function List({ list,handleAddFriend,visibilityAddForm,setVisibilityAddform}) {
+function List({ list,handleAddFriend,visibilityAddForm,setVisibilityAddform,selectFriend,selectedFriend}) {
 
     const displayAddForm = () => {
-        setVisibilityAddform((prev) => !prev);
+        selectFriend(null)
+        setVisibilityAddform((prev)=>!prev) ;
     }
 
     return (
-        <div className='tw-flex tw-flex-col tw-gap-5 tw-px-5 '>
+        <div className='tw-flex tw-flex-col tw-gap-5 xs:tw-px-5 '>
             <ul>
             
                 {
                     list.map((el, indx) => {
-                        return <Friend element={el} key={indx} />
+                        return <Friend element={el} key={indx} selectFriend={selectFriend} selectedFriend={selectedFriend} />
                     })
                 }
             </ul>

@@ -16,3 +16,7 @@ code {
     monospace;
 }
 
+
+.selected{
+  background-color:#fdf2e1 ;
+}
