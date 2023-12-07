@@ -1,5 +1,5 @@
 
-
+// Test Comment
 import React, { useState } from 'react'
 import Button from './Button'
 
@@ -11,7 +11,7 @@ function FormSplitBill({ selectedFriend }) {
 
 
     const handleSubmit = (event) => {
-        event.preventDefault();
+        event.preventDefault(); 
     }
 
     return (
