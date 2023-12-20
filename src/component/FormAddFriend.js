@@ -17,6 +17,7 @@ function FormAddFriend({handleAddFriend}) {
         setName("");
         setImage("https://i.pravatar.cc/48")
     }
+    
     return (
         <form className='tw-bg-[#fdf2e1] tw-py-4' onSubmit={handleSubmit}>
             <div className='tw-grid tw-grid-rows-2 tw-gap-3  '>
