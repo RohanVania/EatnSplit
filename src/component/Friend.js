@@ -9,15 +9,15 @@ function Friend({ element, selectFriend, selectedFriend}) {
                 <img src={element.image} className='tw-rounded-full tw-w-full tw-h-full tw-object-cover' alt={element.name} />
             </div>
             <div className='tw-flex tw-flex-col tw-gap-1  tw-flex-[0.8]'>
-                <h3 className='tw-text-[18px] tw-font-semibold'>{element.name}</h3>
+                <h3 className='tw-text-[19px] tw-font-semibold'>{element.name}</h3>
                 {
-                    element.balance < 0 && <p className='tw-text-[12px] xs:tw-text-[17px] tw-font-medium tw-text-red-500'>You owe {element.name} {Math.abs(element.balance)}£</p>
+                    element.balance < 0 && <p className='tw-text-[14px] xs:tw-text-[17px] tw-font-medium tw-text-red-500'>You owe {element.name} {Math.abs(element.balance)}£</p>
                 }
                 {
-                    element.balance > 0 && <p className='tw-text-[12px] xs:tw-text-[17px] tw-font-medium tw-text-green-400'>{element.name} owes you {Math.abs(element.balance)}£</p>
+                    element.balance > 0 && <p className='tw-text-[14px] xs:tw-text-[17px] tw-font-medium tw-text-green-400'>{element.name} owes you {Math.abs(element.balance)}£</p>
                 }
                 {
-                    element.balance == 0 && <p className='tw-text-[12px] xs:tw-text-[17px] tw-font-medium tw-text-gray-500'>You and {element.name} are even</p>
+                    element.balance == 0 && <p className='tw-text-[14px] xs:tw-text-[17px] tw-font-medium tw-text-grey-500'>You and {element.name} are even</p>
                 }
             </div>
             <Button clickEvent={() => {
