@@ -82,7 +82,7 @@ function App() {
   return (
     <>
     <div className='rssmall:tw-w-[96%] tw-w-[69%] tw-mx-auto  rssmall:tw-mt-3 tw-mt-4 '>
-      <h1 className=' tw-uppercase rssmall:tw-text-[26px] tw-text-[40px] tw-font-semibold tw-text-purple-500'>Split Wisely</h1>
+      <h1 className=' tw-uppercase rssmall:tw-text-[26px] tw-text-[40px] tw-font-semibold tw-text-blue-900'>Split Wisely</h1>
     </div>
       <div className="App  tw-w-[95%] tw-mx-auto tw-mt-[40px] tw-flex tw-flex-wrap-reverse   md:tw-grid tw-gap-y-5  lg:tw-grid-cols-[480px_0.5fr] tw-justify-evenly ">
         <List list={friendlist} handleAddFriend={handleAddFriend} visibilityAddForm={visibilityAddForm} setVisibilityAddform={setVisibilityAddform} selectFriend={handleSelectFriend} selectedFriend={selectFriend} />
